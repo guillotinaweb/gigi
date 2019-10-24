@@ -12,6 +12,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.9",
+    "@angular/cdk": "^8.2.3",
     "@angular/common": "~8.2.9",
     "@angular/compiler": "~8.2.9",
     "@angular/core": "~8.2.9",
@@ -19,8 +20,16 @@
     "@angular/platform-browser": "~8.2.9",
     "@angular/platform-browser-dynamic": "~8.2.9",
     "@angular/router": "~8.2.9",
-    "rxjs": "~6.4.0",
+    "@ngrx/core": "^1.2.0",
+    "@ngrx/effects": "^8.4.0",
+    "@ngrx/store": "^8.4.0",
+    "@ngrx/store-devtools": "^8.4.0",
+    "angular-svg-icon": "^8.0.0",
+    "jexl": "^2.2.2",
+    "medium-editor": "^5.23.3",
+    "rxjs": "^6.4.0",
     "tslib": "^1.10.0",
+    "z-schema": "^4.2.1",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {

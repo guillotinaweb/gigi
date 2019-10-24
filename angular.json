@@ -23,6 +23,11 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
+            "stylePreprocessorOptions": {
+                "includePaths": [
+                    "src/develop/pastanaga-angular/projects/pastanaga/src/lib/styles"
+                ]
+            },
             "assets": [
               "src/favicon.ico",
               "src/assets"
