@@ -1,12 +1,19 @@
 <header>
-    <a href="#" [traverseTo]="'/'">
-        <img height="64" src="assets/logo.svg" />
-    </a>
-
-    <pa-button *ngIf="isAuthenticated" (click)="logout()" icon="log-out" color="secondary"></pa-button>
+  <pa-button icon="menu" (click)="toggleMenu()">Menu</pa-button>
+  <a href="#" [traverseTo]="'/'">
+    <img width="64" height="64" src="assets/logo.svg" />
+  </a>
 </header>
-<grange-breadcrumbs *ngIf="isAuthenticated"></grange-breadcrumbs>
 <main>
-    <traverser-outlet></traverser-outlet>
+  <traverser-outlet></traverser-outlet>
 </main>
+<pa-sidebar name="toolbar">
+  <pa-button
+    *ngIf="isAuthenticated"
+    (click)="logout()"
+    icon="log-out"
+    color="secondary"
+  ></pa-button>
+  My sidebar
+</pa-sidebar>
 <grange-toast-container></grange-toast-container>

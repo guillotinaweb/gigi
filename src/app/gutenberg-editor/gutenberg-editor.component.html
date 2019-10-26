@@ -1,0 +1,24 @@
+<div className="playground__body">
+  <SlotFillProvider #reactNode>
+    <DropZoneProvider>
+      <BlockEditorProvider
+        [value]="blocks"
+        (onInput)="(updateBlocks)"
+        (onChange)="(updateBlocks)"
+      >
+        <div className="edit_toolbar">
+          <BlockInspector></BlockInspector>
+        </div>
+        <div className="editor-styles-wrapper">
+          <BlockEditorKeyboardShortcuts></BlockEditorKeyboardShortcuts>
+          <WritingFlow>
+            <ObserveTyping>
+              <BlockList></BlockList>
+            </ObserveTyping>
+          </WritingFlow>
+        </div>
+        <Popover.Slot></Popover.Slot>
+      </BlockEditorProvider>
+    </DropZoneProvider>
+  </SlotFillProvider>
+</div>

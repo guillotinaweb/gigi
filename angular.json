@@ -24,16 +24,31 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "stylePreprocessorOptions": {
-                "includePaths": [
-                    "src/develop/pastanaga-angular/projects/pastanaga/src/lib/styles"
-                ]
+              "includePaths": [
+                "src/develop/pastanaga-angular/projects/pastanaga/src/lib/styles"
+              ]
             },
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./src/develop/pastanaga-angular/projects/pastanaga/src/assets",
+                "output": "assets"
+              }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@react-page/core/lib/index.css",
+              "node_modules/@react-page/ui/lib/index.css",
+              "node_modules/@react-page/plugins-slate/lib/index.css",
+              "node_modules/@react-page/plugins-background/lib/index.css",
+              "node_modules/@wordpress/components/build-style/style.css",
+              "node_modules/@wordpress/block-editor/build-style/style.css",
+              "node_modules/@wordpress/block-library/build-style/style.css",
+              "node_modules/@wordpress/block-library/build-style/editor.css",
+              "node_modules/@wordpress/block-library/build-style/theme.css",
+              "node_modules/@wordpress/format-library/build-style/style.css"
             ],
             "scripts": []
           },
@@ -93,13 +108,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         },
@@ -111,9 +121,7 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -129,6 +137,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "grange-example"
 }
