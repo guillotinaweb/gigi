@@ -13,7 +13,7 @@ applications:
   - guillotina_cms
   - guillotina.contrib.cache
   - guillotina.contrib.catalog.pg
-address: 8080
+address: 8081
 static:
   - favicon.png: static/favicon.png
   - assets: guillotina:static/assets
