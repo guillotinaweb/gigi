@@ -6,9 +6,9 @@
         (onInput)="(updateBlocks)"
         (onChange)="(updateBlocks)"
       >
-        <div className="edit_toolbar">
+        <pa-sidebar name="editor" className="sidebar-right">
           <BlockInspector></BlockInspector>
-        </div>
+        </pa-sidebar>
         <div className="editor-styles-wrapper">
           <BlockEditorKeyboardShortcuts></BlockEditorKeyboardShortcuts>
           <WritingFlow>

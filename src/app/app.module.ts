@@ -32,6 +32,8 @@ import {
   SlotFillProvider,
   DropZoneProvider
 } from '@wordpress/components';
+import { GrangeFormModule } from 'grange-form';
+import { SchemaFormModule } from 'ngx-schema-form';
 
 @NgModule({
   declarations: [
@@ -47,8 +49,10 @@ import {
     BrowserAnimationsModule,
     ButtonModule,
     TraversalModule,
+    SchemaFormModule.forRoot(),
     GrangeRootModule.forRoot(),
     SidebarModule,
+    GrangeFormModule,
     StoreModule.forRoot({}),
     StoreDevtoolsModule.instrument({
       logOnly: environment.production,
