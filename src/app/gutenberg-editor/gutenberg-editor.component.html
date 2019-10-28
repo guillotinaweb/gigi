@@ -3,8 +3,8 @@
     <DropZoneProvider>
       <BlockEditorProvider
         [value]="blocks"
-        (onInput)="(updateBlocks)"
-        (onChange)="(updateBlocks)"
+        (onInput)="onEditChange.emit($event)"
+        (onChange)="onEditChange.emit($event)"
       >
         <pa-sidebar name="editor" className="sidebar-right">
           <BlockInspector></BlockInspector>

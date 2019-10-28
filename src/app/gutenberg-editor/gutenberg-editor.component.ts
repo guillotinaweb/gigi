@@ -13,6 +13,7 @@ import {
 } from '@angular/core';
 import { registerCoreBlocks } from '@wordpress/block-library';
 import { ReactWrapperComponent } from '@angular-react/core';
+import { render, useState, Fragment } from '@wordpress/element';
 
 @Component({
   selector: 'app-gutenberg-editor',
@@ -44,7 +45,6 @@ export class GutenbergEditorComponent extends ReactWrapperComponent<
       ngZone,
       setHostDisplay: true
     });
-    this.blocks = [];
     registerCoreBlocks();
   }
 }

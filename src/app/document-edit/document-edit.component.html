@@ -2,13 +2,16 @@
 <pa-button icon="menu" (click)="showMetadata()">Metadata</pa-button>
 
 <!-- <app-richtext-editor></app-richtext-editor> -->
-<app-gutenberg-editor (onEditChange)="save($event)"></app-gutenberg-editor>
+<pa-button (click)="onCancel()" color="secondary" size="small"
+  >Cancel</pa-button
+>
+<pa-button (click)="onSave()" border size="small">Save</pa-button>
+<app-gutenberg-editor
+  [blocks]="content"
+  (onEditChange)="save($event)"
+></app-gutenberg-editor>
 <pa-sidebar name="metadata">
   <h2>Edit metadata {{ (context | async).title }}</h2>
   <sf-form [schema]="schema" [(model)]="editModel"></sf-form>
   <p *ngIf="error" class="error">{{ error }}</p>
-  <pa-button (click)="onCancel()" color="secondary" size="small"
-    >Cancel</pa-button
-  >
-  <pa-button (click)="onSave()" border size="small">Save</pa-button>
 </pa-sidebar>
