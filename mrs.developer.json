@@ -9,7 +9,7 @@
     "url": "git@github.com:guillotinaweb/grange.git",
     "https": "https://github.com/guillotinaweb/grange.git",
     "path": "/projects/grange/src",
-    "branch": "pastanaga-variables-import"
+    "branch": "master"
   },
   "grange-core": {
     "url": "git@github.com:guillotinaweb/grange-core.git",

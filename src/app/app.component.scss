@@ -1,39 +1,25 @@
-@import 'pastanaga_variables';
+@import "pastanaga_variables";
 
 :host {
-  display: block;
+    display: block;
 
-  pa-sidebar {
-    background-color: $white;
-  }
-
-  header {
-    position: relative;
-    background-color: $white-smoke;
-    padding-left: rythm(1);
-    height: rythm(1) * 5;
-
-    a:focus,
-    a:active {
-      box-shadow: none;
+    main {
+        padding: rythm(2);
     }
 
-    img {
-      cursor: pointer;
+    grange-breadcrumbs {
+        background-color: $azure-light;
     }
 
-    pa-button {
-      position: absolute;
-      right: rythm(0.5);
-      top: 50%;
-      transform: translateY(-50%);
+    pa-sidebar {
+        background-color: $white;
+        h1 {
+            padding: rythm(0.5);
+            background: $azure-light;
+        }
+        .logout-button {
+            position: absolute;
+            bottom: 0;
+        }
     }
-  }
-
-  grange-breadcrumbs {
-    background-color: $azure-light;
-  }
-  main {
-    padding: rythm(2);
-  }
 }

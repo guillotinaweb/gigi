@@ -8,7 +8,8 @@
   }
   app-gutenberg-editor ::ng-deep {
     pa-sidebar {
-      right: 0;
+        right: 0;
+        background-color: $white;
     }
     // Hugo's new WordPress shades of gray, from http://codepen.io/hugobaeta/pen/grJjVp.
     $black: #000;

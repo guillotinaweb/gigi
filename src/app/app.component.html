@@ -1,19 +1,17 @@
-<header>
-  <pa-button icon="menu" (click)="toggleMenu()">Menu</pa-button>
-  <a href="#" [traverseTo]="'/'">
-    <img width="64" height="64" src="assets/logo.svg" />
-  </a>
-</header>
-<main>
-  <traverser-outlet></traverser-outlet>
-</main>
+<pa-button class="left-menu-button" icon="menu" (click)="toggleMenu()">sidebar.menu-button</pa-button>
+<grange-breadcrumbs></grange-breadcrumbs>
 <pa-sidebar name="toolbar">
-  <pa-button
-    *ngIf="isAuthenticated"
-    (click)="logout()"
-    icon="log-out"
-    color="secondary"
-  ></pa-button>
-  My sidebar
+    
+    <h1>
+        <img width="32" src="assets/logo.svg" /> Gigi
+    </h1>
+    <pa-button traverseTo="/@@contents" icon="file" iconAndText color="secondary"
+               (click)="toggleMenu()">sidebar.contents</pa-button>
+    <pa-button traverseTo="/@@templates" icon="content-existing" iconAndText color="secondary">sidebar.templates</pa-button>
+    <pa-button traverseTo="/@@users" icon="group" iconAndText color="secondary">sidebar.users</pa-button>
+    <pa-button *ngIf="isAuthenticated" class="logout-button" (click)="logout()" icon="log-out" color="secondary"></pa-button>
 </pa-sidebar>
+<main>
+    <traverser-outlet></traverser-outlet>
+</main>
 <grange-toast-container></grange-toast-container>
