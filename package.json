@@ -87,7 +87,7 @@
     "@types/react-dom": "^16.9.3",
     "angular-svg-icon": "^8.0.0",
     "jexl": "^2.2.2",
-    "medium-editor": "^5.23.3",
+    "date-fns": "^2.9.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-redux": "^7.1.1",
