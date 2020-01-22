@@ -13,6 +13,10 @@
   ],
   "exclude": [
     "src/test.ts",
-    "src/**/*.spec.ts"
+    "src/**/*.spec.ts",
+    "src/develop/grange/projects/demo",
+    "src/develop/pastanaga-angular/src/app",
+    "src/app/react-example",
+    "src/develop/ngx-state-traverser/projects/nst-test"
   ]
 }
